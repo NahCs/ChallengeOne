@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Encriptador de textos</h1>
+    </header>
+    <main>
+        <section class="primerTexto">
+            <label class="textoCuadros" for="encrip">Ingrese el mensaje que desea encriptar o desencriptar</label>
+            <textarea id="encriptar" class="cuadros" placeholder="Ingrese el texto aqui" cols="30" rows="20"></textarea>
+            <h6>Solo letras minusculas y sin acentos</h6>
+            <div class="botonera">
+                <button onclick="encriptarTxt();">Encriptar</button>
+                <button onclick="desencriptarTxt();">Desencriptar</button>
+            </div>
+        </section>
+        <section class="segundoTexto">
+            <label class="textoCuadros" for="descrip">Texto encriptado</label>
+            <textarea id="encriptado" class="cuadros" placeholder="Texto encriptado" cols="30" rows="20"></textarea>
+            <p>Si desea copiar el texto encriptado haga clik aqui <img id="copiar" onclick="copiartexto();"
+                    src="./Images/Copiar.png"></p>
+        </section>
+    </main>
+    <footer class="PieDePag">
+        <p>Desarrollado por Ncs - 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
